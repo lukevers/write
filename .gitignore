@@ -1,0 +1,6 @@
+# Annoying macOS files
+.DS_Store
+
+# Builds
+Write.app
+/app/app
