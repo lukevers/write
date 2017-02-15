@@ -1,4 +1,4 @@
-VERSION=0.1
+VERSION=0.1.0
 BRANCH=git rev-parse --abbrev-ref HEAD
 COMMIT=git rev-parse HEAD
 COMMIT_COUNT=git rev-list --count $$(${BRANCH})
