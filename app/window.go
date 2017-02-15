@@ -31,7 +31,7 @@ func newWelcomeWindow() app.Contexter {
 func newAboutWindow() app.Contexter {
 	w := app.NewWindow(app.Window{
 		Width:          200,
-		Height:         100,
+		Height:         200,
 		FixedSize:      true,
 		MinimizeHidden: true,
 
