@@ -16,8 +16,7 @@ func main() {
 	app.Run()
 }
 
-// OnLaunch is a handler which (if set) is called when the app is initialized
-// and ready.
+// OnLaunch is a handler which is called when the app is initialized and ready.
 func onLaunch() {
 	appMenu := &MenuApp{}
 
@@ -27,7 +26,7 @@ func onLaunch() {
 	mainWindow = newWelcomeWindow()
 }
 
-// OnReopen is a handler which (if set) is called when the app is reopened.
+// OnReopen is a handler which is called when the app is reopened.
 func onReopen(hasVisibleWindow bool) {
 	if mainWindow != nil {
 		return
@@ -36,29 +35,29 @@ func onReopen(hasVisibleWindow bool) {
 	mainWindow = newWelcomeWindow()
 }
 
-// OnFocus is a handler which (if set) is called when the app became focused.
+// OnFocus is a handler which is called when the app became focused.
 func onFocus() {
 	//
 }
 
-// OnBlur is a handler which (if set) is called when the app lost the focus
+// OnBlur is a handler which is called when the app lost the focus.
 func onBlur() {
 	//
 }
 
-// OnFileOpen is a handler which (if set) is called when a file is targeted to
-// be opened with the app.
+// OnFileOpen is a handler which is called when a file is targeted to be opened
+// with the app.
 func onFileOpen(filename string) {
 	//
 }
 
-// OnTerminate is a handler which (if set) is called when the app is requested
-// to be terminated. Return false cancels the termination request.
+// OnTerminate is a handler which is called when the app is requested to be
+// terminated. Return false cancels the termination request.
 func onTerminate() bool {
 	return true
 }
 
-// OnFinalize is a handler which (if set) is called when the app is about to be
+// OnFinalize is a handler which is called when the app is about to be
 // terminated. It should be used to perform any final cleanup before the
 // application terminates.
 func onFinalize() {
