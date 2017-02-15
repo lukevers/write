@@ -1,0 +1,21 @@
+{{ define "welcome" }}
+<div class="WindowLayout" oncontextmenu="OnContextMenu">    
+    <div class="WelcomeBox">
+        <h1>
+            Welcome,
+          <span>
+                {{if .Greeting}}
+                    {{html .Greeting}}
+                {{else}}
+                    World
+                {{end}}
+            </span>
+        </h1>
+        <input type="text"
+               value="{{html .Greeting}}"
+               placeholder="What is your name?"
+               autofocus="true"
+               onchange="OnInputChange" />
+    </div>
+</div>
+{{ end }}
