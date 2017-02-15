@@ -5,10 +5,6 @@ import (
 	_ "github.com/murlokswarm/mac"
 )
 
-var (
-	window app.Contexter
-)
-
 func main() {
 	app.OnLaunch = onLaunch
 	app.OnReopen = onReopen
