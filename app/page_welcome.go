@@ -23,9 +23,15 @@ func (p *PageWelcome) Render() string {
 	return content.String()
 }
 
+/*
 func (p *PageWelcome) OnInputChange(arg app.ChangeArg) {
 	p.Greeting = arg.Value
 	app.Render(p)
+}
+*/
+
+func (p *PageWelcome) ClickGetStarted() {
+	Stdout.Println("Clicked let's get started")
 }
 
 func (p *PageWelcome) OnContextMenu() {
