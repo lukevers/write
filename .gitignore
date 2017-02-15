@@ -4,3 +4,8 @@
 # Builds
 Write.app
 /app/app
+
+# CSS
+/app/resources/css/*.css
+/app/resources/css/*.map
+/app/.sass-cache
