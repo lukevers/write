@@ -24,10 +24,9 @@ func main() {
 // and ready.
 func onLaunch() {
 	appMenu := &MenuApp{}
-	app.MenuBar().Mount(appMenu)
 
-	appMenuDock := &MenuApp{}
-	app.Dock().Mount(appMenuDock)
+	app.MenuBar().Mount(appMenu)
+	app.Dock().Mount(appMenu)
 
 	mainWindow = newWelcomeWindow()
 }
