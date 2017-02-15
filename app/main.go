@@ -5,6 +5,10 @@ import (
 	_ "github.com/murlokswarm/mac"
 )
 
+var (
+	window app.Contexter
+)
+
 func main() {
 	app.OnLaunch = onLaunch
 	app.OnReopen = onReopen
@@ -25,16 +29,16 @@ func onLaunch() {
 	appMenuDock := &MenuApp{}
 	app.Dock().Mount(appMenuDock)
 
-	win = newMainWindow()
+	window = newWelcomeWindow()
 }
 
 // OnReopen is a handler which (if set) is called when the app is reopened.
 func onReopen(hasVisibleWindow bool) {
-	if win != nil {
+	if window != nil {
 		return
 	}
 
-	win = newMainWindow()
+	window = newWelcomeWindow()
 }
 
 // OnFocus is a handler which (if set) is called when the app became focused.

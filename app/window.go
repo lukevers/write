@@ -4,24 +4,22 @@ import (
 	"github.com/murlokswarm/app"
 )
 
-var (
-	win app.Contexter
-)
-
-func newMainWindow() app.Contexter {
-	// Creates a window context.
-	win := app.NewWindow(app.Window{
+func newWelcomeWindow() app.Contexter {
+	w := app.NewWindow(app.Window{
 		Title:          "Write",
-		Width:          1280,
-		Height:         720,
+		Width:          400,
+		Height:         580,
+		FixedSize:      true,
 		TitlebarHidden: true,
-		OnClose: func() bool {
-			win = nil
-			return true
-		},
+		OnClose:        onWindowClose,
 	})
 
-	welcome := &PageWelcome{}
-	win.Mount(welcome)
-	return win
+	page := &PageWelcome{}
+	w.Mount(page)
+	return w
+}
+
+func onWindowClose() bool {
+	window = nil
+	return true
 }
