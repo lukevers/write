@@ -1,12 +1,6 @@
 {{ define "welcome" }}
-<div class="WindowLayout" oncontextmenu="OnContextMenu">    
-    <div class="WelcomeBox">
-        <h1>Welcome</h1>
-        <h2>Let's get started.</h2>
-        <input type="text"
-               placeholder="What is your name?"
-               autofocus="true"
-               onchange="OnInputChange" />
-    </div>
+<div class="WindowLayout PageWelcome" oncontextmenu="OnContextMenu">    
+    <h1>Welcome</h1>
+    <button class="button button-primary button-bordered button-translucent">Let's get started.</button>
 </div>
 {{ end }}

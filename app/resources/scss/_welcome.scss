@@ -1,0 +1,16 @@
+.WindowLayout.PageWelcome {
+    background-image: url('../images/pages/welcome/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #FFF;
+    flex-direction: column;
+
+    h1 {
+        font-weight: 200;
+        font-size: 3em;
+    }
+
+    button {
+        font-size: 1em;
+    }
+}

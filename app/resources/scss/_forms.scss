@@ -1,0 +1,14 @@
+input {
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid silver;
+    outline: none;
+    font-size: 14px;
+    background: transparent;
+    color: white;
+    text-align: center;
+
+    &:focus {
+        border-bottom-color: deepskyblue;
+    }
+}
