@@ -10,5 +10,6 @@ This assumes you have [Go](https://golang.org/) installed properly.
 
 ```bash
 go get -u github.com/murlokswarm/macpack
+go get
 make
 ```
