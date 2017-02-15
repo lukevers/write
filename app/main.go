@@ -29,16 +29,16 @@ func onLaunch() {
 	appMenuDock := &MenuApp{}
 	app.Dock().Mount(appMenuDock)
 
-	window = newWelcomeWindow()
+	mainWindow = newWelcomeWindow()
 }
 
 // OnReopen is a handler which (if set) is called when the app is reopened.
 func onReopen(hasVisibleWindow bool) {
-	if window != nil {
+	if mainWindow != nil {
 		return
 	}
 
-	window = newWelcomeWindow()
+	mainWindow = newWelcomeWindow()
 }
 
 // OnFocus is a handler which (if set) is called when the app became focused.

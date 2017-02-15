@@ -5,10 +5,7 @@ import (
 	"github.com/murlokswarm/app"
 )
 
-type MenuApp struct {
-	CustomTitle string
-	Disabled    bool
-}
+type MenuApp struct{}
 
 func init() {
 	app.RegisterComponent(&MenuApp{})
@@ -24,6 +21,8 @@ func (m *MenuApp) Render() string {
 	return content.String()
 }
 
-func (m *MenuApp) OnCustomMenuClick() {
-	Stdout.Println("OnCustomMenuClick")
+func (m *MenuApp) OpenAboutWindow() {
+	if aboutWindow == nil {
+		aboutWindow = newAboutWindow()
+	}
 }

@@ -4,6 +4,11 @@ import (
 	"github.com/murlokswarm/app"
 )
 
+var (
+	mainWindow  app.Contexter
+	aboutWindow app.Contexter
+)
+
 func newWelcomeWindow() app.Contexter {
 	w := app.NewWindow(app.Window{
 		Title:          "Write",
@@ -11,15 +16,35 @@ func newWelcomeWindow() app.Contexter {
 		Height:         580,
 		FixedSize:      true,
 		TitlebarHidden: true,
-		OnClose:        onWindowClose,
+
+		OnClose: func() bool {
+			mainWindow = nil
+			return true
+		},
 	})
 
-	page := &PageWelcome{}
-	w.Mount(page)
+	w.Mount(&PageWelcome{})
+
 	return w
 }
 
-func onWindowClose() bool {
-	window = nil
-	return true
+func newAboutWindow() app.Contexter {
+	w := app.NewWindow(app.Window{
+		Width:          200,
+		Height:         100,
+		FixedSize:      true,
+		MinimizeHidden: true,
+
+		OnClose: func() bool {
+			aboutWindow = nil
+			return true
+		},
+	})
+
+	w.Mount(&PageAbout{
+		Version: Version,
+		Commit:  Commit[:8],
+	})
+
+	return w
 }

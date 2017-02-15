@@ -1,12 +1,13 @@
 {{ define "menu-app" }}
 <menu>
-    <menu label="app">
-        <menuitem label="{{if .CustomTitle}}{{.CustomTitle}}{{else}}Custom item{{end}}" 
-                  shortcut="ctrl+c" 
-                  _onclick="OnCustomMenuClick" 
-                  separator="true"
-                  disabled="{{.Disabled}}" />
-        <menuitem label="Quit" shortcut="meta+q" selector="terminate:" />        
+    <menu label="Write">
+        <menuitem
+            label="About Write"
+            _onclick="OpenAboutWindow" />
+        <menuitem
+            label="Quit"
+            shortcut="meta+q"
+            selector="terminate:" />
     </menu>
     <MenuWindow />
 </menu>
