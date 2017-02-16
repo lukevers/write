@@ -6,10 +6,12 @@ As of right now, this only supports macOS.
 
 ## Build instructions
 
-This assumes you have [Go](https://golang.org/) installed properly.
+This assumes you have the following installed properly:
+
+* [Go](https://golang.org/)
+* [Sass](http://sass-lang.com/)
+* [Macpack](github.com/murlokswarm/macpack)
 
 ```bash
-go get -u github.com/murlokswarm/macpack
-go get
-make
+make build
 ```
