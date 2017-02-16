@@ -22,11 +22,3 @@ func (m *MenuApp) Render() string {
 
 	return content.String()
 }
-
-// OpenAboutWindow opens a new PageAbout in a new window if a window for it
-// does not already exist.
-func (m *MenuApp) OpenAboutWindow() {
-	if aboutWindow == nil {
-		aboutWindow = newAboutWindow()
-	}
-}

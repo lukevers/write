@@ -5,8 +5,7 @@ import (
 )
 
 var (
-	mainWindow  app.Contexter
-	aboutWindow app.Contexter
+	mainWindow app.Contexter
 )
 
 func newWelcomeWindow() app.Contexter {
@@ -24,27 +23,6 @@ func newWelcomeWindow() app.Contexter {
 	})
 
 	w.Mount(&PageWelcome{})
-
-	return w
-}
-
-func newAboutWindow() app.Contexter {
-	w := app.NewWindow(app.Window{
-		Width:          200,
-		Height:         200,
-		FixedSize:      true,
-		MinimizeHidden: true,
-
-		OnClose: func() bool {
-			aboutWindow = nil
-			return true
-		},
-	})
-
-	w.Mount(&PageAbout{
-		Version: Version,
-		Commit:  Commit[:8],
-	})
 
 	return w
 }
