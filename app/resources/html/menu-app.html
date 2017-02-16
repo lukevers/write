@@ -1,14 +1,11 @@
 {{ define "menu-app" }}
-<menu>
-    <menu label="Write">
-        <menuitem
-            label="About Write"
-            _onclick="OpenAboutWindow" />
-        <menuitem
-            label="Quit"
-            shortcut="meta+q"
-            selector="terminate:" />
-    </menu>
-    <MenuWindow />
+<menu label="Write">
+    <menuitem
+        label="About Write"
+        _onclick="OpenAboutWindow" />
+    <menuitem
+        label="Quit"
+        shortcut="meta+q"
+        selector="terminate:" />
 </menu>
 {{ end }}

@@ -36,5 +36,5 @@ func (p *PageWelcome) ClickGetStarted() {
 
 func (p *PageWelcome) OnContextMenu() {
 	ctxmenu := app.NewContextMenu()
-	ctxmenu.Mount(&MenuApp{})
+	ctxmenu.Mount(&Menu{})
 }

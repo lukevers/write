@@ -18,10 +18,10 @@ func main() {
 
 // OnLaunch is a handler which is called when the app is initialized and ready.
 func onLaunch() {
-	appMenu := &MenuApp{}
+	menu := &Menu{}
 
-	app.MenuBar().Mount(appMenu)
-	app.Dock().Mount(appMenu)
+	app.MenuBar().Mount(menu)
+	app.Dock().Mount(menu)
 
 	mainWindow = newWelcomeWindow()
 }
