@@ -1,0 +1,10 @@
+{{ define "welcome-0" }}
+<div class="WindowLayout PageWelcome" oncontextmenu="OnContextMenu">
+    <h1 {{ if .Animate }}class="animated fadeOutUp"{{ end }}>Welcome</h1>
+    <button
+        onclick="ClickGetStarted"
+        class="button button-bordered button-translucent {{ if .Animate }}animated fadeOutDown{{ end }}">
+            Let's get started.
+    </button>
+</div>
+{{ end }}

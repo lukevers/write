@@ -22,7 +22,10 @@ func newWelcomeWindow() app.Contexter {
 		},
 	})
 
-	w.Mount(&PageWelcome{})
+	w.Mount(&PageWelcome{
+		Page:    0,
+		Animate: false,
+	})
 
 	return w
 }
