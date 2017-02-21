@@ -1,8 +1,15 @@
-// Global
-@import 'vars';
-@import 'base';
-@import 'buttons';
-@import 'forms';
+////////////////////////////
+// Global CSS & Variables //
+////////////////////////////
 
-// Pages
-@import 'page-welcome';
+    @import 'vars';
+    @import 'base';
+    @import 'buttons';
+    @import 'forms';
+    @import 'animations';
+
+//////////////////////////
+// Specific Page Styles //
+//////////////////////////
+
+    @import 'page-welcome';

@@ -1,0 +1,7 @@
+{
+  "name": "write",
+  "private": true,
+  "dependencies": {
+    "animate-sass": "^0.6.6"
+  }
+}

@@ -9,3 +9,6 @@ Write.app
 /app/resources/css/*.css
 /app/resources/css/*.map
 /app/.sass-cache
+
+# Dependencies
+/app/bower_components

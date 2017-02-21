@@ -1,0 +1,149 @@
+//////////////////////////////////
+// Attention Seekers Animations //
+//////////////////////////////////
+
+    $use-bounce: false;
+    $use-flash: false;
+    $use-pulse: false;
+    $use-shake: false;
+    $use-swing: false;
+    $use-tada: false;
+    $use-wiggle: false;
+    $use-wobble: false;
+
+/////////////////////////////
+// Bounce Enter Animations //
+/////////////////////////////
+
+    $use-bounceIn: false;
+    $use-bounceInDown: false;
+    $use-bounceInLeft: false;
+    $use-bounceInRight: false;
+    $use-bounceInUp: false;
+
+////////////////////////////
+// Bounce Exit Animations //
+////////////////////////////
+
+    $use-bounceOut: false;
+    $use-bounceOutDown: false;
+    $use-bounceOutLeft: false;
+    $use-bounceOutRight: false;
+    $use-bounceOutUp: false;
+
+///////////////////////////
+// Fade Enter Animations //
+///////////////////////////
+
+    $use-fadeIn: false;
+    $use-fadeInDown: false;
+    $use-fadeInDownBig: false;
+    $use-fadeInLeft: false;
+    $use-fadeInLeftBig: false;
+    $use-fadeInRight: false;
+    $use-fadeInRightBig: false;
+    $use-fadeInUp: false;
+    $use-fadeInUpBig: false;
+
+//////////////////////////
+// Fade Exit Animations //
+//////////////////////////
+
+    $use-fadeOut: false;
+    $use-fadeOutDown: true;
+    $use-fadeOutDownBig: false;
+    $use-fadeOutLeft: false;
+    $use-fadeOutLeftBig: false;
+    $use-fadeOutRight: false;
+    $use-fadeOutRightBig: false;
+    $use-fadeOutUp: true;
+    $use-fadeOutUpBig: false;
+
+//////////////////////////
+// Flippers Animations //
+//////////////////////////
+
+    $use-flip: false;
+    $use-flipInX: false;
+    $use-flipInY: false;
+    $use-flipOutX: false;
+    $use-flipOutY: false;
+
+///////////////////////////
+// Lightspeed Animations //
+///////////////////////////
+
+    $use-lightSpeedIn: false;
+    $use-lightSpeedOut: false;
+
+/////////////////////////////
+// Rotate Enter Animations //
+/////////////////////////////
+
+    $use-rotateIn: false;
+    $use-rotateInDownLeft: false;
+    $use-rotateInDownRight: false;
+    $use-rotateInUpLeft: false;
+    $use-rotateInUpRight: false;
+
+////////////////////////////
+// Rotate Exit Animations //
+////////////////////////////
+
+    $use-rotateOut: false;
+    $use-rotateOutDownLeft: false;
+    $use-rotateOutDownRight: false;
+    $use-rotateOutUpLeft: false;
+    $use-rotateOutUpRight: false;
+
+////////////////////////////
+// Slide Enter Animations //
+////////////////////////////
+
+    $use-slideInDown: false;
+    $use-slideInLeft: false;
+    $use-slideInRight: false;
+    $use-slideInUp: false;
+
+///////////////////////////
+// Slide Exit Animations //
+///////////////////////////
+
+    $use-slideOutDown: false;
+    $use-slideOutLeft: false;
+    $use-slideOutRight: false;
+    $use-slideOutUp: false;
+
+////////////////////////
+// Special Animations //
+////////////////////////
+
+    $use-hinge: false;
+    $use-rollIn: false;
+    $use-rollOut: false;
+
+///////////////////////////
+// Zoom Enter Animations //
+///////////////////////////
+
+    $use-zoomIn: false;
+    $use-zoomInDown: false;
+    $use-zoomInLeft: false;
+    $use-zoomInRight: false;
+    $use-zoomInUp: false;
+
+//////////////////////////
+// Zoom Exit Animations //
+//////////////////////////
+
+    $use-zoomIn: false;
+    $use-zoomOutDown: false;
+    $use-zoomOutLeft: false;
+    $use-zoomOutRight: false;
+    $use-zoomOutUp: false;
+
+/////////////
+// Animate //
+/////////////
+
+    @import '../../bower_components/animate-sass/animate';
